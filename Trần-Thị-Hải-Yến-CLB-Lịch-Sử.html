@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lạc bộ Lịch sử - THPT Nguyễn Hữu Cảnh</title>
+
+    <style>
+    form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border: 1px solid #8B0000;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            line-height: 1.6;
+            color: #333;
+        }
+
+       header {
+    background: linear-gradient(rgba(139,0,0,0.7), rgba(139,0,0,0.7)),
+    url("https://scontent-hkg1-1.xx.fbcdn.net/v/t39.30808-6/248411669_103784038776712_3195060146017748527_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFNbaKIF0i2l4mhnlaANoGn766j0QdbwJbvrqPRB1vAllmARwhxGmFju5b33JdXMfxDuo7R8UsNZNw26rmSdikD&_nc_ohc=J_XaJyIuAfwQ7kNvwHrawCY&_nc_oc=AdkrZ2woCOCZq1qnAfQNP58B-5T-w7DQhpFHhqUSvoMPo3jpJfHDFHnYeqCsPl4D2LWVah_KNOPHLfG5SMmOgE-i&_nc_zt=23&_nc_ht=scontent-hkg1-1.xx&_nc_gid=M-3iMoy8iMKVy0LjJkv5Ww&oh=00_AfsyikIO8Gle5pmzIHKZHHOb2cw8Q-H7AW4qag4d6E-yMg&oe=699336A9");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+header img {
+    width: 30%;
+    height: 300px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            color: #8B0000;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #8B0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #B22222;
+        }
+        .gallery {
+            display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit:cover ;
+            border-radius: 8px;
+            transition: 0.3s;
+          
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CÂU LẠC BỘ LỊCH SỬ</h1>
+    <p>Trường THPT Nguyễn Hữu Cảnh</p>
+    <div style="text-align: center;"><img src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/629243637_1310406831113890_4475590687217644519_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFTqCO9JMEpQ86v5ua4bSkjbVcMH1mWzeNtVwwfWZbN4xYpYobaKxXZgzt6M8S_FMbSzitf1jTw2T1Noz-YovVD&_nc_ohc=fxlxADsxj9cQ7kNvwEhfspj&_nc_oc=Adn9s8sOZdFLk7OUCMYghonq3tNu-KwO7WI3PSPi8eZV42astG7y59fxiz0u_tStuXXwiAebiCu5H0yR6p8qkBLH&_nc_zt=23&_nc_ht=scontent-hkg1-2.xx&_nc_gid=1hNvLb9-akmy5VZeYvaTmg&oh=00_AfuSamOpXfollEkTkSAiQ-3ooXUtDQi0SEBVu1oLDeeC_w&oe=6993438A"></div>
+</header>
+
+
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#hoatdong">Hoạt động</a>
+    <a href="#hinhanh">Hình ảnh</a>
+    <a href="#muctieu">Mục tiêu</a>
+    <a href="#lienhe">Liên hệ</a>
+</nav>
+
+<div class="container">
+
+    <section id="gioithieu" class="section">
+        <h2>Giới thiệu</h2>
+        <p>
+            Câu lạc bộ Lịch sử Trường THPT Nguyễn Hữu Cảnh là nơi hội tụ những học sinh yêu thích tìm hiểu về lịch sử dân tộc và thế giới.
+            CLB được thành lập với mong muốn lan tỏa niềm đam mê lịch sử và giúp môn Lịch sử trở nên sinh động, hấp dẫn hơn đối với học sinh.
+        </p>
+    </section>
+
+    <section id="hoatdong" class="section">
+        <h2>Hoạt động nổi bật</h2>
+        <ul>
+            <li>Tổ chức chuyên đề và thảo luận về các sự kiện lịch sử</li>
+            <li>Tổ chức Hội thi: "ÂM VANG SỬ VIỆT"</li>
+            <li>Tham quan bảo tàng, di tích lịch sử</li>
+            <li>Kỷ niệm các ngày lễ lớn của đất nước</li>
+            <li>Giao lưu, chia sẻ kiến thức giữa các thành viên</li>
+        </ul>
+    </section>
+      <section id="hinhanh" class="section">
+        <h2>Hình ảnh hoạt động</h2>
+
+        <div class="gallery">
+            <img src="https://filethpt.hcm.edu.vn/uploadimages/news/2026/thptnguyenhuucanh/2026_2/3/gen-h-z7490258128782141cca9c90e752ed1b53456cd15cfb38_3220261456.jpg?w=800" alt="">
+			<img src="https://filethpt.hcm.edu.vn/uploadimages/news/2025/thptnguyenhuucanh/2025_12/19/gen-h-z73284714105116d74aa095ba5962e1dd0c003e030293e_191220251028.jpg?w=1130" alt="">
+            <img src="https://filethpt.hcm.edu.vn/uploadimages/news/2025/thptnguyenhuucanh/2025_10/19/gen-h-z71312934859259d186baab8b00b1b62541701db25caeb_19102025947.jpg?w=1130" alt="">
+                  <img src="https://filethpt.hcm.edu.vn/UploadImages/news//2026/thptnguyenhuucanh/admin/2026_1/24/gen-h-z744915283885942d30d8ac73d357abdfc0018058d8a85_2412026859.jpg?w=900" alt="">
+        </div>
+
+    </section>
+
+
+    <section id="muctieu" class="section">
+        <h2>Mục tiêu</h2>
+        <p>
+            CLB hướng đến việc giúp học sinh hiểu rõ giá trị của lịch sử,
+            rèn luyện kỹ năng thuyết trình, làm việc nhóm và tư duy phản biện.
+            Với phương châm <strong>"Hiểu quá khứ – Vững tương lai"</strong>,
+            CLB luôn chào đón những bạn có chung niềm đam mê.
+        </p>
+         </section>
+        
+<section id="lienhe" class="section">
+    <h2>Liên hệ </h2>
+
+    <hr style="margin:20px 0;">
+
+    <h3>Đăng ký tham gia CLB</h3>
+
+    <form onsubmit="dangky(event)">
+        <input type="text" placeholder="Họ và tên" required><br><br>
+        <input type="text" placeholder="Lớp" required><br><br>
+        <input type="email" placeholder="Email" required><br><br>
+        <textarea placeholder="Lý do bạn muốn tham gia CLB" rows="4"></textarea><br><br>
+        <button type="submit" class="btn">Gửi đăng ký</button>
+    </form>
+</section>
+
+</div>
+<footer>
+    <p>© 2026 Câu lạc bộ Lịch sử - THPT Nguyễn Hữu Cảnh</p>
+</footer>
+<script>
+function dangky(event) {
+    event.preventDefault();
+    alert("Cảm ơn bạn đã đăng ký! CLB sẽ liên hệ sớm nhất.");
+}
+</script>
+
+</body>
+</html>
